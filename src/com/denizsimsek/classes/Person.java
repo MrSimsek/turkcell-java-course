@@ -54,6 +54,10 @@ public class Person implements Greetings, Movement {
         System.out.println("Hello, I am " + name + " and I am " + age + " years old. And I am a " + (gender.equals(Gender.MALE) ? "dude" : "girl"));
     }
 
+    public String sayName() {
+        return name.toUpperCase();
+    }
+
     public void walk() {
         System.out.println(name + " is walking.");
     }
